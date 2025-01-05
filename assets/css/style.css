@@ -58,7 +58,7 @@
      * spacing
      */
   
-    --section-padding: 90px;
+    --section-padding: 50px;
   
     /**
      * box shadow
@@ -1105,3 +1105,96 @@
     .feature-list { grid-template-columns: 1fr 1fr; }
   
   }
+  /* General Section Styling */
+.client-section {
+  padding: 60px 0;
+  background-color: #f9f9f9;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* Our Clients Heading Styling */
+.section-title {
+  text-align: center;
+  margin-bottom: 40px; /* Space below the title */
+}
+
+.section-title h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--violet-blue-crayola);
+}
+
+/* Client Wrapper - Flex Layout */
+.client-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px; /* Equal spacing between the two clients */
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+/* Individual Client Styling */
+.client {
+  flex: 1;
+  max-width: 45%; /* Ensures the clients are equally spaced */
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.client-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px; /* Adjust the height as needed */
+}
+
+.client-logo img {
+  max-width: 100px;
+  margin-bottom: 10px;
+}
+
+.client-info h3 {
+  font-size: 2.0rem;
+  color: var(--violet-blue-crayola);
+  margin-bottom: 10px;
+}
+
+.client-info p {
+  color: var(--black-coral);
+  font-size: 1.5rem;
+  line-height: 1.7;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .client-wrapper {
+    flex-direction: column;
+    gap: 20px; /* Adjust gap for mobile screens */
+  }
+
+  .client {
+    max-width: 100%; /* Full width on mobile screens */
+    margin-bottom: 20px; /* Space between clients on mobile */
+  }
+
+  .client-logo img {
+    max-width: 80px; /* Smaller logo on mobile */
+  }
+
+  .client-info h3 {
+    font-size: 1.25rem; /* Adjust heading size for mobile */
+  }
+
+  .client-info p {
+    font-size: 0.95rem; /* Adjust text size for mobile */
+  }
+}
+
+
+  
